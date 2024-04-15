@@ -1,0 +1,10 @@
+## Interface: 30403
+
+## Title: BetterBags - Better Sort
+## Author: Vollmer
+## Version: 1.0
+## Dependencies: BetterBags
+
+## Notes: Improves Alphabetical sorting by ignoring color codes. 
+
+main.lua
