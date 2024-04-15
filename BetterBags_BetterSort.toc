@@ -1,0 +1,28 @@
+## Interface: 100206
+## Interface-Wrath: 30403
+## Interface-Classic: 11502
+
+## Title: BetterBags - Better Sort
+## Author: Vollmer
+## Version: @project-version@
+## X-Date: @project-date-iso@
+## X-License: MIT
+## X-Curse-Project-ID:
+## X-WoWI-ID:
+## X-Wago-ID:
+
+## Dependencies: BetterBags
+
+## Notes: Improves Alphabetical sorting by ignoring color codes. 
+## Notes-ruRU: @localization(locale="ruRU")@
+## Notes-deDE: @localization(locale="deDE")@
+## Notes-koKR: @localization(locale="koKR")@
+## Notes-esMX: @localization(locale="esMX")@
+## Notes-esES: @localization(locale="esES")@
+## Notes-ptBR: @localization(locale="ptBR")@
+## Notes-zhCN: @localization(locale="zhCN")@
+## Notes-zhTW: @localization(locale="zhTW")@
+## Notes-itIT: @localization(locale="itIT")@
+## Notes-frFR: @localization(locale="frFR")@
+
+main.lua
