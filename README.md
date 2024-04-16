@@ -2,19 +2,32 @@
 
 Plugin for the AddOn [BetterBags](https://www.curseforge.com/wow/addons/better-bags) that improves the Alphabetical sorting.
 
-Currently the default Alphabetical sorting doesn't remove the color prefix from titles when sorting. So eg. `|cffff8000Armor - Leather` would come after `|cffa335eeArmor - Mail` due to `a` coming before `f` in the comparison:
+Currently the default Alphabetical sorting doesn't remove the color prefix from titles when sorting. So eg. `|cffff8000Armor - Leather` would come after `|cffa335eeArmor - Mail` due to `a` coming before `f` in the comparison. This is not intuitive behavior for an Alphabetical sorting. 
 
-`|cff`<code style="color : red">f</code>`f8000Armor - Leather`
+Since `|` is a special character, the problem actually extends as far as to make the color coded titles always show up at the bottom of the bags with the default sorting method.
 
-`|cff`<code style="color : red">a</code>`335eeArmor - Mail`
+This plugin solves this by stripping color codes before sorting, to ensure proper Alphabetical order. 
 
-Since `|` is a special character, the problem actually extends as far as to make the color coded titles always come last in the sorting. This is not intuitive behavior for an Alphabetical sorting. This plugin solves this by stripping color codes before sorting, to ensure proper Alphabetical order.
+# Examples
 
-Without plugin:
+A visual example of the default behaviour can be seen here - the letters highligthed in `Red` being the ones that decide the order:
 
-![image](https://github.com/Krealle/BetterBags_BetterSort/assets/3404958/d850ed19-8a05-4e34-b583-e3359cefee89)
+${\Huge{\color{white}{\textsf{|cff\ \}} \color{red}f \space \color{white}{\textsf{f8000Armor - Leather\ \}}}}$
 
-With plugin:
+${\Huge{\color{white}{\textsf{|cff\ \}} \color{red}a \space \color{white}{\textsf{335eeArmor - Mail\ \}}}}$
 
-![image](https://github.com/Krealle/BetterBags_BetterSort/assets/3404958/92d8adba-b1f9-4eaa-8efb-e44fc7a02000)
+And by removing the color codes when comparing, we get the expected behaviour:
+
+${\Huge{\color{white}{\textsf{Armor - \ \}} \color{red}L \space \color{white}{\textsf{eather\ \}}}}$
+
+${\Huge{\color{white}{\textsf{Armor - \ \}} \color{red}M \space \color{white}{\textsf{ail\ \}}}}$
+
+Pratical example, left side with plugin; right side without:
+
+![imgonline-com-ua-twotoone-TDYvPPfCgZFDpz](https://github.com/Krealle/BetterBags_BetterSort/assets/3404958/8ee41bd0-60ea-40ea-b71f-dca8c2d93330)
+
+# Downloads
+- [Curseforge](https://www.curseforge.com/wow/addons/betterbags-bettersort)
+- [Wago AddOns](https://addons.wago.io/addons/betterbags-bettersort)
+- [Wowinterface](https://www.wowinterface.com/downloads/info26720-BetterBags-BetterSort.html)
 
