@@ -13,7 +13,7 @@
 
 ## Dependencies: BetterBags
 
-## Notes: Improves Alphabetical sorting by ignoring color codes. 
+## Notes: Improvements and additions to BetterBags sorting methods.
 ## Notes-ruRU: @localization(locale="ruRU")@
 ## Notes-deDE: @localization(locale="deDE")@
 ## Notes-koKR: @localization(locale="koKR")@
@@ -25,4 +25,6 @@
 ## Notes-itIT: @localization(locale="itIT")@
 ## Notes-frFR: @localization(locale="frFR")@
 
-main.lua
+AlphabeticalSort.lua
+BagOptions.lua
+ItemLevelSorting.lua
