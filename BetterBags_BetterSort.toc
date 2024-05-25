@@ -28,3 +28,4 @@
 AlphabeticalSort.lua
 BagOptions.lua
 ItemLevelSorting.lua
+NewItemDurationFix.lua
